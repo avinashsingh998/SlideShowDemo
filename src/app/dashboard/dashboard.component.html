@@ -1,0 +1,28 @@
+
+<div style="width: 100%; box-shadow: 0px 2px 5px gray; margin: 0px; height: 60px; position:relative">
+    <h2 style=" padding: 12px; margin: 0px; ">DemoApp</h2>
+    <a routerLink="/login" style="position: absolute; right: 12px; top:17px">Logout</a>
+</div>
+<h3> Hello {{user}}</h3>
+
+<input type="file" (change)="scrabBase64($event)" multiple>
+
+<div     style="width: 60vw; height: 60vh;" 
+>
+    <app-slide 
+    [srcList]="srcList"
+    [interval]="6000"
+    tag = 'tag1'
+    ></app-slide>
+
+
+</div><div     style="width: 60vw; height: 60vh;" 
+>
+    <app-slide 
+    [srcList]="srcList"
+    [interval]="6000"
+    tag = 'tag2'
+    ></app-slide>
+
+
+</div>

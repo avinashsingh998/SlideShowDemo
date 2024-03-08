@@ -1,0 +1,15 @@
+<form (ngSubmit)="onSubmit()">
+    <label for="username">Username:</label>
+    <input type="text" id="username" name="username" [(ngModel)]="username" required>
+  
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password" [(ngModel)]="password" required>
+  
+    <button type="submit">Login</button>
+    <a routerLink="/register" style="float: right; ">Signup</a>
+
+  </form>
+  
+  <p *ngIf="loginError" style="color: red;">{{ loginError }}</p>
+  
+  

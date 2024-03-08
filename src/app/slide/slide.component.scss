@@ -1,0 +1,17 @@
+.slide{
+    position: relative;
+    height: 98%;
+    width: 98%;
+    margin: 1%;
+    border: 2px solid rgb(255, 0, 0);
+    overflow: hidden;
+
+    .image{
+        position: absolute;
+        top:0px;
+        width: 100%;
+        transition: all 400ms;
+        height: 100%;
+        transform: scale(1);
+    }
+}
