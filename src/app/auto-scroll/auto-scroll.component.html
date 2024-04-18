@@ -1,0 +1,5 @@
+<div class="main" *ngIf="files.length>0">
+    <div class="iframeParent" *ngFor="let file of files">
+        <iframe [src]="file" (load)="loaded($event)" frameborder="0" class="iframeChild"></iframe>
+    </div>
+</div>

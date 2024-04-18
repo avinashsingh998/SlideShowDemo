@@ -1,0 +1,33 @@
+.main{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+
+    .iframeParent{
+        height: 50vh;
+        width: 50vw;
+        overflow-y: hidden;
+        position: relative;
+
+        .iframeChild{
+            width: 99%;
+            border: 1px solid black;
+            min-height: 100%;
+            height: 1200px;
+            position: absolute;
+            animation: autoScrool 12s infinite;
+            
+            animation-timing-function: linear;
+        }
+    }
+}
+
+@keyframes autoScrool {
+    0%  {
+        top:0px;
+    }
+    100% {
+        top:calc(100% - 1230px);
+    }
+}

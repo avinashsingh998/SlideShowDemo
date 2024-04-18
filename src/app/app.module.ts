@@ -8,6 +8,10 @@ import { FormsModule } from '@angular/forms';
 import { LoginComponent } from './login/login.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { SlideComponent } from './slide/slide.component';
+import { AutoScrollComponent } from './auto-scroll/auto-scroll.component';
+import { AddFileComponent } from './add-file/add-file.component';
+
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -15,12 +19,15 @@ import { SlideComponent } from './slide/slide.component';
     SignupComponent,
     LoginComponent,
     DashboardComponent,
-    SlideComponent
+    SlideComponent,
+    AutoScrollComponent,
+    AddFileComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
